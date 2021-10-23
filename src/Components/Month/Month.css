@@ -1,0 +1,143 @@
+:root{
+    --primary-blue:#0b2e8e;
+    --primary-violet:#6053c9;
+    --primary-orange:#ffa60f;
+    --primary-white:#fff;
+    --primary-light-violet:#7b6fd1;
+}
+.main-container{
+    width:100%;
+    background:var(--primary-blue);
+    margin:0 auto;
+    padding: 0 0 20px 0;
+    color:var(--primary-white);
+
+} 
+.monthly-course-container{
+    background:var(--primary-violet);
+    border-radius:0 0 25px 25px;
+    width:100%;
+    padding-bottom: 10px;
+}
+.monthly-course-container select{
+    outline:none;
+    margin: 20px 20px 20px 75px;
+    background: var(--primary-violet);
+    color:var(--primary-white);
+    border-style: none;
+    font-size:20px;
+    width: 10%;
+    border-bottom:2px solid var(--primary-white);
+
+}
+
+.monthly-card-skeleton{
+    display:flex;
+    width:90%;
+    justify-content: space-around;
+    background:var(--primary-light-violet);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px auto;
+    
+    
+}
+.monthly-card-skeleton input{
+    margin: auto;
+    width: 15%;
+}
+.month-duration{
+    width: 30%;
+    padding-top: 5px;
+}
+.month-duration label{
+    font-size:20px;
+    font-weight:bold;
+}
+.offer{
+    font-size: 13px;
+    line-height: 20px;
+}
+.month-price{
+    width: 30%;
+}
+.month-price p{
+    font-size: 20px;
+    font-weight: 800;
+    color:var(--primary-orange);
+}
+.month-price p span{
+    font-size: 14px;
+    font-weight: 200;
+    color:var(--primary-orange);
+
+}
+
+.month-price .discount{
+    font-size: 13px;
+    line-height: 20px;
+    background:var(--primary-violet);
+    border-radius: 5px;
+    width:70px;
+    color:var(--primary-white);
+    padding:2px;
+}
+.session-duration{
+    width: 25%;
+    padding-top: 5px;
+}
+.price-session{
+    font-size:20px;
+    font-weight:bold;
+}
+.session-count{
+    font-size: 13px;
+    line-height: 20px;
+}
+/***********************************************Month footer***************************************************************/
+.monthly-footer-container{
+    width:100%;
+    padding: 20px 75px;
+    color:var(--primary-white);
+}
+.monthly-footer-items{
+    display:flex;
+    justify-content: space-between;
+    font-size:25px;
+    font-weight: 600;
+    
+}
+.monthly-footer-items .A1{
+    width: 35%;
+    padding: 20px;
+    line-height: 28px;
+
+}
+.monthly-footer-items .A2{
+    width: 25%;
+    padding: 20px;
+    line-height: 28px;
+}
+.monthly-footer-items .A3{
+    width: 15%;
+    padding: 20px;
+    text-align:center;
+    
+}
+.month-btn{
+    border-style: none;
+    background: var(--primary-orange);
+    border-radius: 20px;
+    width: 80%;
+    height: 38px;
+    margin: 14px auto;
+    font-weight:700;
+}
+.terms{
+    float:right;
+    color:var(--primary-white);
+    font-size:13px;
+}
+.terms a{
+    color:var(--primary-white);
+}
