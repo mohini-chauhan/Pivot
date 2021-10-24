@@ -28,13 +28,14 @@
 }
 .btn-container button{
     width:15%;
-    height:50px;
+    height:40px;
     border-style: none;
     border-radius: 25px;
     background:var(--primary-violet);
     color: var(--primary-white);
     font-size: 15px;
     font-weight: bold;
+    margin: 0 10px;
 }
 
 .btn-container button:hover{
