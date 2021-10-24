@@ -95,30 +95,30 @@
     line-height: 20px;
 }
 /***********************************************Month footer***************************************************************/
-.monthly-footer-container{
+.footer-container{
     width:100%;
     padding: 20px 75px;
     color:var(--primary-white);
 }
-.monthly-footer-items{
+.footer-items{
     display:flex;
     justify-content: space-between;
     font-size:25px;
     font-weight: 600;
     
 }
-.monthly-footer-items .A1{
+.footer-items .A1{
     width: 35%;
     padding: 20px;
     line-height: 28px;
 
 }
-.monthly-footer-items .A2{
+.footer-items .A2{
     width: 25%;
     padding: 20px;
     line-height: 28px;
 }
-.monthly-footer-items .A3{
+.footer-items .A3{
     width: 15%;
     padding: 20px;
     text-align:center;

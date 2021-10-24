@@ -6,19 +6,20 @@ import "./Month.css";
 const Month = (props) => {
 
 
-
+//for obtaining all the grades in an array
 var gradeList=[]
     for (let i=0;i<props.text.length;i++){
         gradeList.push(props.text[i].grade)
     }
-    const [select,setSelect]=useState(gradeList[0]);
-//for printing the values of dropdown 
-var dropDown=gradeList.map((g)=>{
-    return (
-
-        <option  value={g}>{g}</option>
-    )
-})    
+//state setting for select
+const [select,setSelect]=useState(gradeList[0]);
+    //for printing the values of dropdown 
+    var dropDown=gradeList.map((g)=>{
+        return (
+            <option  value={g}>{g}</option>
+        )
+    })
+//function for price after discount    
 function dPrice(price,discount){
     return price-(price*(discount/100));
 
@@ -52,18 +53,15 @@ function dPrice(price,discount){
         <div className="main-container">
             <section className="monthly-course-container">
                 <select  onChange={(e)=>setSelect(e.target.value)}>
-                    {dropDown}
-             
+                    {dropDown}             
                 </select>
-                
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["5_sessions"])}
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["10_sessions"])}
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["20_sessions"])}
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["45_sessions"])}
-
             </section>
-            <section className="monthly-footer-container">
-                <section className="monthly-footer-items">
+            <section className="footer-container">
+                <section className="footer-items">
                     <article className="A1">
                         <p>Monthly classes let you choose your own course topics</p>
                     </article>
@@ -75,10 +73,7 @@ function dPrice(price,discount){
                        <button className="month-btn">Book Now</button> 
                     </article>
                 </section>
-
                 <p className="terms">Refund same day<a href="/"> terms & conditions </a>apply</p>
-
-
             </section>
             
         </div>

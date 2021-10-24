@@ -1,0 +1,111 @@
+.year-container{
+    width:97%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.year-container ul{
+    text-align: center;
+    padding: 20px 0;
+    list-style-type: none;
+
+}
+.year-container ul li{
+    display: inline;
+    margin: 2px 78px;
+    padding: 12px 17px;
+    border-radius: 20px;
+    
+    
+}
+.year-container ul li a{
+    text-decoration: none;
+    font-size:15px;
+    color:var(--primary-white);
+    font-weight:600;
+    
+    
+}
+.active{
+    background: var(--primary-blue);  
+}
+.year-container ul li:hover{
+    background: var(--primary-blue);
+}
+.session-details-container{
+    width: 97%;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size:20px;
+    font-weight:bold;
+    margin: 0 auto;
+}
+.session-count{
+  font-size:40px;
+  color:var(--primary-yellow);
+  line-height: 55px;
+}
+.topic-details-container{
+    width: 97%;
+    padding: 20px 70px;
+    font-size: 13px;
+    font-weight: bold; 
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.topic-content{
+    display: flex;
+    justify-content: space-between;
+}
+.topic-content h3{
+    color:var(--primary-yellow);
+    margin-top:30px;
+}
+.topic-content p{
+    line-height: 14px;
+    margin-top: 10px;
+    width: 58%;
+}
+/****************************************Yearly footer***********************************************************/
+.footer-items button{
+    color:var(--primary-blue);
+    font-weight:800;
+}
+.head-para span{
+    color:var(--primary-yellow);
+}
+.head-para span s{
+    font-size: 12px;
+}
+.sub-para{
+    font-size:12px;
+}
+.A1 .head-para{
+ font-size:20px;
+ line-height: 40px;
+}
+.A2 .head-para{
+    font-size:20px;
+    line-height: 40px;
+}
+.A3 .head-para{
+font-size:20px;
+line-height: 40px;
+}
+.tab-sub{
+    font-size:15px;
+    font-weight:bold;
+}
+.yearA3{
+    width: 18%;
+    padding: 20px;
+    text-align:center;
+    padding-top:73px;
+    color:black;
+}
+.yearA3 .month-btn{
+    height:40px;
+    background:var(--primary-yellow);
+    
+}
