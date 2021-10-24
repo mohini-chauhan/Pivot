@@ -4,7 +4,7 @@ import "./Month.css";
 
 
 const Month = (props) => {
-
+console.log('fff',Object.keys(props.text[0].boards))
 
 //for obtaining all the grades in an array
 var gradeList=[]
@@ -13,10 +13,29 @@ var gradeList=[]
     }
 //state setting for select
 const [select,setSelect]=useState(gradeList[0]);
+
+var boardList=[]
+    for (let i =0;i<Object.keys(props.text[gradeList.indexOf(select)].boards).length;i++){
+        boardList.push(Object.keys(props.text[gradeList.indexOf(select)].boards)[i])
+    }
+
+    //state for selecting board
+    const [board,setBoard]=useState(boardList[0]);
+    console.log("hgfgh",boardList)
+    
+
+    
     //for printing the values of dropdown 
     var dropDown=gradeList.map((g)=>{
         return (
             <option  value={g}>{g}</option>
+        )
+    })
+
+     //for printing the values of  board dropdown 
+     var boardDropDown=boardList.map((b)=>{
+        return (
+            <option  value={b}>{b}</option>
         )
     })
 //function for price after discount    
@@ -47,18 +66,25 @@ function dPrice(price,discount){
         )
     }
 
+    function onSelect(e){
+        setSelect(e.target.value)
+        setBoard(Object.keys(props.text[gradeList.indexOf(e.target.value)].boards)[0])
 
+    }
 
     return (
         <div className="main-container">
             <section className="monthly-course-container">
-                <select  onChange={(e)=>setSelect(e.target.value)}>
+                <select  onChange={onSelect}>
                     {dropDown}             
                 </select>
-                {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["5_sessions"])}
-                {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["10_sessions"])}
-                {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["20_sessions"])}
-                {cardSkeleton(props.text[gradeList.indexOf(select)].boards.general["45_sessions"])}
+                <select  onChange={(e)=>setBoard(e.target.value)}>  
+                    {boardDropDown}             
+                </select>
+                {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["5_sessions"])}
+                {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["10_sessions"])}
+                {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["20_sessions"])}
+                {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["45_sessions"])} 
             </section>
             <section className="footer-container">
                 <section className="footer-items">
