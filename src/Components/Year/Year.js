@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./Year.css"
 
 const Year = (props) => {
+    console.log(props.tex)
     function sessionContent(){
         return(
             <article>

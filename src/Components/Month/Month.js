@@ -4,7 +4,7 @@ import "./Month.css";
 
 
 const Month = (props) => {
-console.log('fff',Object.keys(props.text[0].boards))
+
 
 //for obtaining all the grades in an array
 var gradeList=[]
@@ -21,7 +21,7 @@ var boardList=[]
 
     //state for selecting board
     const [board,setBoard]=useState(boardList[0]);
-    console.log("hgfgh",boardList)
+    
     
 
     
@@ -44,7 +44,7 @@ function dPrice(price,discount){
 
 }
     function cardSkeleton( cardData){
-        console.log("kvvh",cardData)
+        
         return(
             <section className="monthly-card-skeleton">
                     <input type="radio"/>

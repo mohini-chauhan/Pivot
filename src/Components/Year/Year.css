@@ -8,11 +8,13 @@
     text-align: center;
     padding: 20px 0;
     list-style-type: none;
+    margin: auto;
+    width: 90%;
 
 }
 .year-container ul li{
     display: inline;
-    margin: 2px 78px;
+    margin: 2px 20px;
     padding: 12px 17px;
     border-radius: 20px;
     

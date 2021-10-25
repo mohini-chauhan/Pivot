@@ -38,7 +38,8 @@ function App() {
           <button  onClick={()=>setToggle(true)}className={toggle?"year-btn clk":"year-btn"}>Yearly Courses</button>
           <button onClick={()=>setToggle(false)} className={toggle?"monthly-btn" :"year-btn clk"}>Monthly Courses</button>
         </section>
-        {toggle?<Year/>:<Month text={data[0].monthly}/>}
+        {toggle?<Year text={data[1]}/>:<Month text={data[0].monthly}/>}
+        {console.log()}
       </div>
       
     </div>
