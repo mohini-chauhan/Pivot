@@ -59,6 +59,10 @@ function onSelect(e){
             </section>
         )
     }
+    function dPrice(price,discount){
+        return price-(price*(discount/100));
+    
+    }
     
 
     return (
@@ -97,14 +101,14 @@ function onSelect(e){
                 <section className="footer-items">
                     <article className="A11">
                         <button>Filling out soon</button>
-                        <p className="head-para">Vacant seats<span> 100 Seats </span></p>
+                        <p className="head-para">Vacant seats<span> {props.text[gradeList.indexOf(select)].boards[board]['seats']} Seats </span></p>
                         <p className="sub-para">Not a classroom,but 1:1 sessions </p>
                     </article>
                     <article className="A22">
-                        <button>50% Off</button>
-                        <p className="head-para">Subscription Cost:<span> ₹3999<s> ₹5999</s></span></p>
+                        <button>{props.text[gradeList.indexOf(select)].boards[board]['discount']}% Off</button>
+                        <p className="head-para">Subscription Cost:<span> {dPrice(props.text[gradeList.indexOf(select)].boards[board]['price'],props.text[gradeList.indexOf(select)].boards[board]['discount'])}<s> {props.text[gradeList.indexOf(select)].boards[board]['price']}</s></span></p>
                         <p className="sub-para">This cost is inclusive of the tablet cost. </p>
-                        <p className="sub-para">Per session cost is ₹129 </p>
+                        <p className="sub-para">Per session cost is ₹{props.text[gradeList.indexOf(select)].boards[board]['per_class_price']} </p>
                     </article>
                     <article className="yearA3">
                        <button className="month-btn">Book Now</button> 

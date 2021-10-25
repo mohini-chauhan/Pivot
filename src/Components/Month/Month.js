@@ -47,7 +47,7 @@ function dPrice(price,discount){
         
         return(
             <section className="monthly-card-skeleton">
-                    <input type="radio"/>
+                    <input type="radio" name="selectgrp"/>
                     <div className="month-duration">
                         <label>{cardData.valid} </label>
                         <p className="offer">{cardData.refund}</p>
