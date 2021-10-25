@@ -19,7 +19,7 @@ function App() {
     }).then(function(result){
     // store Data in State Data Variable
       setData(result)
-      console.log(result)
+      
     }).catch(
       function(err){
         console.log(err, ' error')
@@ -38,8 +38,7 @@ function App() {
           <button  onClick={()=>setToggle(true)}className={toggle?"year-btn clk":"year-btn"}>Yearly Courses</button>
           <button onClick={()=>setToggle(false)} className={toggle?"monthly-btn" :"year-btn clk"}>Monthly Courses</button>
         </section>
-        {toggle?<Year text={data[1]}/>:<Month text={data[0].monthly}/>}
-        {console.log()}
+        {data[1]!==undefined?(toggle ?<Year text={data[1].yearly}/>:<Month text={data[0].monthly}/>):""}
       </div>
       
     </div>
