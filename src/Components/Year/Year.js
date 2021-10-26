@@ -106,7 +106,7 @@ function onSelect(e){
                     </article>
                     <article className="A22">
                         <button>{props.text[gradeList.indexOf(select)].boards[board]['discount']}% Off</button>
-                        <p className="head-para">Subscription Cost:<span> {dPrice(props.text[gradeList.indexOf(select)].boards[board]['price'],props.text[gradeList.indexOf(select)].boards[board]['discount'])}<s> {props.text[gradeList.indexOf(select)].boards[board]['price']}</s></span></p>
+                        <p className="head-para">Subscription Cost:<span> ₹{dPrice(props.text[gradeList.indexOf(select)].boards[board]['price'],props.text[gradeList.indexOf(select)].boards[board]['discount'])}<s> {props.text[gradeList.indexOf(select)].boards[board]['price']}</s></span></p>
                         <p className="sub-para">This cost is inclusive of the tablet cost. </p>
                         <p className="sub-para">Per session cost is ₹{props.text[gradeList.indexOf(select)].boards[board]['per_class_price']} </p>
                     </article>
