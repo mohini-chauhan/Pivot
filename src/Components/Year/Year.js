@@ -81,7 +81,7 @@ function onSelect(e){
                     </div>   
                 </section>
                 <section className="session-details-container">
-                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['total_sessions'],'Total Sessions',{width:'55%'})}
+                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['total_sessions'],'Total Sessions',{width:'50%'})}
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_pre_assignments'],'Online Pre Assignments')}
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_post_assignments'],'Online Post Assignments')}
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_assignments'],'Online Assignments')}
