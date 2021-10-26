@@ -1,4 +1,4 @@
-# Pivot - Api fetch && responsive banner
+# Pivot - Api fetch && Responsive banner
 
 ## To Run the project 
 1. Install dependencies by running:
