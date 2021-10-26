@@ -11,6 +11,7 @@
     margin:0 auto;
     padding: 0 0 20px 0;
     color:var(--primary-white);
+    border-radius: 0 0 25px 25px;
 
 } 
 .monthly-course-container{
