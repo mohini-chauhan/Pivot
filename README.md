@@ -6,7 +6,7 @@
 2. Run it using :
     ``` npm start```
 
-## Compiled version is  also included in he repository run it using 
+## Compiled version is  also included in the repository run it using 
 
  1. Install server :```   npm install -g serve ```
 
