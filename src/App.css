@@ -15,6 +15,16 @@
     width: 100%;
     background: var(--primary-white);
 }
+.top-banner{
+    width: 40%;
+    background: var(--primary-yellow);
+    border-radius: 8px 8px 0 0;
+    color: var(--primary-blue);
+    height:fit-content;
+    text-align:center;
+    padding: 9px;
+    margin-left: 100px;
+}
 .banner-container{
     width: 90%;
     background: var(--primary-violet);
@@ -27,7 +37,7 @@
     padding-left:80px;
 }
 .btn-container button{
-    width:15%;
+    width:20%;
     height:40px;
     border-style: none;
     border-radius: 25px;
@@ -44,5 +54,27 @@
 }
 .clk{
     background: var(--primary-blue) !important;
+
+}
+
+@media (max-width: 922px){
+    .btn-container{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0  
+    }
+    .btn-container button{
+        width: 40%;
+    }
+
+
+
+}
+@media (max-width:860px){
+    .top-banner{
+        width: 75%;
+        margin: auto;
+
+    }
 
 }

@@ -12,6 +12,17 @@
     width: 90%;
 
 }
+.monthly-course-container .year-select{
+    outline: none;
+    margin: 20px 20px 20px 75px;
+    background: var(--primary-violet);
+    color: var(--primary-white);
+    border-style: none;
+    font-size: 20px;
+    width: 100px;
+    border-bottom: 2px solid var(--primary-white);
+    
+}
 .year-container .year-board-btn button{
     display: inline;
     margin: 2px 20px;
@@ -36,14 +47,15 @@
 .session-details-container{
     width: 95%;
     padding: 40px 30px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(182px, 1fr) );
+    grid-row-gap:20px ;
     font-size:20px;
     font-weight:bold;
     margin: 0 auto;
 }
 .session-number{
-    width: 12%;
+    width: 65%;
     line-height: 30px;
 }
 .session-count{
@@ -71,6 +83,49 @@
     line-height: 14px;
     margin-top: 10px;
     width: 58%;
+}
+
+@media (max-width: 500px){
+    .session-details-container{
+        text-align: center;
+    }
+    .session-number{
+        width: 100% !important;
+    }
+}
+@media (max-width: 750px){
+    .year-container{
+        display: block;
+        width: 95%;
+        text-align: center;
+    }
+    .year-container .year-board-btn{
+        text-align: center;
+        width: 100%;
+    }
+    .year-container .year-board-btn button{
+        margin: 0;
+        padding: 12px 15px;
+    }
+    .monthly-course-container .year-select{
+            margin: 0;
+    }
+}
+@media (max-width: 922px){
+    .topic-content{
+        display: block;
+    }
+    .topic-details-container{
+        text-align: center;
+        padding: 10px;
+    }
+    .topic-content p{
+        width: 100%;
+    }
+
+
+
+
 }
 /****************************************Yearly footer***********************************************************/
 .footer-items button{
@@ -121,4 +176,18 @@
     height:40px;
     background:var(--primary-yellow);
     
+}
+
+@media (max-width: 922px){
+    .A11,.A22{
+        width: 100%;
+        padding: 10px;
+    }
+    .yearA3{
+        width: 80%;
+        padding: 10px;
+    }
+    .terms{
+        line-height: 50px;
+    }
 }

@@ -72,7 +72,7 @@ function onSelect(e){
             {console.log(board)}
             <section className="monthly-course-container">
                 <section className="year-container">
-                    <select onChange={onSelect}>
+                    <select className="year-select" onChange={onSelect}>
                     {dropDown}
                     </select>   
                     <div className="year-board-btn">
@@ -85,8 +85,8 @@ function onSelect(e){
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_pre_assignments'],'Online Pre Assignments')}
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_post_assignments'],'Online Post Assignments')}
                     {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_assignments'],'Online Assignments')}
-                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_tests'],'Online Tests',{width:'7%'})}
-                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['career_counselling_sessions'],'Career Counselling Sessions',{width:'18%'})}
+                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['online_tests'],'Online Tests',{width:'55%'})}
+                    {sessionContent(props.text[gradeList.indexOf(select)].boards[board]['career_counselling_sessions'],'Career Counselling Sessions',{width:'101%'})}
                 </section> 
                 <section className="topic-details-container">
                     <h2>Course Topic Include</h2>

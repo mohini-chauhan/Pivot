@@ -26,7 +26,7 @@
     color:var(--primary-white);
     border-style: none;
     font-size:20px;
-    width: 10%;
+    width: 15%;
     border-bottom:2px solid var(--primary-white);
 
 }
@@ -94,6 +94,44 @@
     font-size: 13px;
     line-height: 20px;
 }
+
+@media (max-width: 922px){
+    .monthly-course-container select{
+        margin: 10px;
+        width: 50%;
+    }
+    .dropdown-container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .monthly-card-skeleton{
+        display: block;
+        text-align: center;
+    }
+    .month-duration{
+        width: 80%;
+        margin: 5px auto;
+    }
+    .month-price{
+        width: 80%;
+        margin: 5px auto;
+    }
+    .month-price .discount{
+        margin: 5px auto;
+    }
+    .session-duration{
+        width: 80%;
+        margin: 5px auto;
+    }
+
+
+}
+
+
+
+
 /***********************************************Month footer***************************************************************/
 .footer-container{
     width:100%;
@@ -140,4 +178,34 @@
 }
 .terms a{
     color:var(--primary-white);
+}
+
+
+@media (max-width: 922px){
+    .footer-container{
+        padding: 20px;
+        text-align: center;
+    }
+    .footer-items{
+        display: block;
+        width:100%;
+        margin: auto;
+        font-size: 20px;
+    }
+    .footer-items .A1{
+        width: 100%;
+        padding: 10px;
+    }
+    .footer-items .A2{
+        width: 100%;
+        padding: 10px;
+    }
+    .footer-items .A3{
+        width: 100%;
+        padding: 10px;
+    }
+
+
+
+
 }

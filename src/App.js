@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="top-banner">Guranteed Higher Score! Only with <strong> easyMath</strong></div>
       <div className="banner-container">
         <section className="btn-container">
           <button  onClick={()=>setToggle(true)}className={toggle?"year-btn clk":"year-btn"}>Yearly Courses</button>

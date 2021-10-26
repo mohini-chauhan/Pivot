@@ -75,12 +75,12 @@ function dPrice(price,discount){
     return (
         <div className="main-container">
             <section className="monthly-course-container">
-                <select  onChange={onSelect}>
+                <div className="dropdown-container"><select  onChange={onSelect}>
                     {dropDown}             
                 </select>
                 <select  onChange={(e)=>setBoard(e.target.value)}>  
                     {boardDropDown}             
-                </select>
+                </select></div>
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["5_sessions"])}
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["10_sessions"])}
                 {cardSkeleton(props.text[gradeList.indexOf(select)].boards[board]["20_sessions"])}
